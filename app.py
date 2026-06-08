@@ -40,7 +40,7 @@ def calculate_bankroll_path(f, p, current_steps):
     return history
 
 # STREAMLIT SLIDER KONTROLLERİ
-st.markdown("### Parametrelerinizi Seçin")
+st.markdown("###Choose Your Parameters")
 current_steps = st.slider('Hands Played (Steps)', min_value=1, max_value=max_steps, value=150, step=1)
 p = st.slider('Win Chance (p)', min_value=0.00, max_value=1.00, value=0.60, step=0.01)
 f_percent = st.slider('Risk % (f)', min_value=0.0, max_value=100.0, value=15.0, step=0.5)
